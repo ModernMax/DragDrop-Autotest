@@ -11,8 +11,8 @@ public class DragAndDropAutotest {
         Configuration.browser = "chrome";
         Configuration.startMaximized = true;
     }
-    @Test
 
+    @Test
     void DragDrop () {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         $("#column-a").shouldHave(Condition.text("A"));
